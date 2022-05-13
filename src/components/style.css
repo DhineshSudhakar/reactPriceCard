@@ -1,0 +1,88 @@
+.card{
+    width: 80%;
+    background-color: rgb(255, 247, 247);
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 0px rgb(22, 20, 43);
+    transition: transform ease-in 0.2s;
+}
+
+.card:hover{
+    transform: translateY(-5px)
+}
+
+.card-header{
+    text-align: center;
+}
+
+.title{
+    color: gray;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.price{
+    margin: 10px 0;
+    font-size: 50px;
+}
+
+.month{
+    font-size: 15px;
+}
+
+.content{
+    margin-top: 15px;
+    
+}
+
+.disabled{
+    opacity: 0.4;
+}
+
+.content > p{
+    margin-left: 15px;
+}
+
+.unlimited{
+    font-weight: bold;
+}
+
+.content > button{
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(55, 58, 255);
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    opacity: 0.8;
+    
+}
+
+.fa{
+    margin-right: 10px;
+}
+
+.content > button:hover{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1025px){
+    .card{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .card{
+        width: 250px;
+    }
+}
+
+
+@media only screen and (max-width: 430px){
+    .card{
+        width: 300px;
+    }
+}

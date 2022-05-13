@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    background:linear-gradient(to right, rgb(46, 46, 255), rgb(169, 159, 255))no-repeat fixed;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.App{
+    margin: 0;
+    padding: 0;
+}
+
+.cards{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 170px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+@media only screen and (max-width: 1024px){
+    .cards{
+        width: 90%;
+        padding-top: 100px;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .cards{
+        width: 80%;
+        padding-top: 100px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-items: start;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .cards{
+        width: 90%;
+        padding-top: 100px;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        justify-items: center;
+    }
+}
